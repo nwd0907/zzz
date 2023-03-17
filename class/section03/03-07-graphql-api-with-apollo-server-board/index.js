@@ -53,7 +53,24 @@ const resolvers = {
 
       // 3. DB에 저장된 결과를 브라우저에 응답(response) 주기
       return '게시글 등록에 성공하였습니다.'
-    }
+    },
+
+    // 과제) 아래 API가 작동되도록 만들기 - 1) phone.js 추가하기, 2) req/res 변경하기, 3) 타입 작성하기
+    // createTokenOfPhone: () => {
+    //   const myphone = req.body.qqq
+
+    //   // 1. 휴대폰번호 자릿수 맞는지 확인하기(10~11)
+    //   const isValid = checkPhone(myphone)
+    //   if(isValid === false) return
+
+    //   // 2. 핸드폰 토큰 6자리 만들기
+    //   const mytoken = getToken()
+
+    //   // 3. 핸드폰번호에 토큰 전송하기
+    //   sendTokenToSMS(myphone, mytoken)
+
+    //   res.send("인증완료!!!")
+    // }
   }
 };
 
