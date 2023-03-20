@@ -14,12 +14,16 @@ export function getWelcomeTemplate({ name, age, school }){
     const mytemplate = `
         <html>
             <body>
-                <h1>${name}님 가입을 환영합니다!!!</h1>
-                <hr />
-                <div>이름: ${name}</div>
-                <div>나이: ${age}</div>
-                <div>학교: ${school}</div>
-                <div>가입일: ${getToday()}</div>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div style="width: 500px;">
+                        <h1>${name}님 가입을 환영합니다!!!</h1>
+                        <hr />
+                        <div style="color: red;">이름: ${name}</div>
+                        <div>나이: ${age}</div>
+                        <div>학교: ${school}</div>
+                        <div>가입일: ${getToday()}</div>
+                    </div>
+                </div>
             </body>
         </html>
     `
