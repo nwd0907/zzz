@@ -17,3 +17,5 @@ export class UpdateProductInput extends PartialType(CreateProductInput) {
 // PickType(CreateProductInput, ["name", "price"]) => 뽑기
 // OmitType(CreateProductInput, ["description"]) => 빼기
 // PartialType(CreateProductInput) => 물음표(있어도 되고 없어도 됨) 만들기
+
+// RequiredType => 존재하지 않음
