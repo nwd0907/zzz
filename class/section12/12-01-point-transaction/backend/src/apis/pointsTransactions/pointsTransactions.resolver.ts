@@ -1,5 +1,6 @@
 import { UseGuards } from '@nestjs/common';
-import { Args, Mutation, Resolver } from '@nestjs/graphql';
+import { Args, Context, Int, Mutation, Resolver } from '@nestjs/graphql';
+import { IContext } from 'src/commons/interfaces/context';
 import { GqlAuthGuard } from '../auth/guards/gql-auth.guard';
 import { PointTransaction } from './entities/pointTransaction.entity';
 import { PointsTransactionsService } from './pointsTransactions.service';
@@ -14,7 +15,10 @@ export class PointsTransactionsResolver {
   @Mutation(() => PointTransaction)
   createPointTransaction(
     @Args('impUid') impUid: string, //
-  ): void {
-    return this.pointsTransactionsService.create({ impUid });
+    @Args({ name: 'amount', type: () => Int }) amount: number,
+    @Context() context: IContext,
+  ): Promise<PointTransaction> {
+    const user = context.req.user;
+    return this.pointsTransactionsService.create({ impUid, amount, user });
   }
 }
