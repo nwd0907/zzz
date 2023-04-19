@@ -7,10 +7,10 @@ export class FilesService {
   async upload({ files }: IFilesServiceUpload): Promise<string[]> {
     console.log(files);
 
-    const waitedFile1 = await files[0];
-    const waitedFile2 = await files[1];
-    const waitedFiles = [waitedFile1, waitedFile2];
-    console.log(waitedFiles); // [File, File]
+    const waitedFile0 = await files[0];
+    const waitedFile1 = await files[1];
+    const waitedFiles = [waitedFile0, waitedFile1];
+    console.log(waitedFiles); // [File0, File1]
 
     // 1. 파일을 클라우드 스토리지에 저장하는 로직
 
