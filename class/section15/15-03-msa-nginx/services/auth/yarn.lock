@@ -106,10 +106,10 @@
   dependencies:
     "@apollographql/graphql-playground-html" "1.6.29"
 
-"@apollo/server@^4.5.0":
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/@apollo/server/-/server-4.7.0.tgz#213d6209aa22a2d63f0b3a812f079f56853ee5cb"
-  integrity sha512-qPfMnsHHA+U/F3dRAAlyiXWbTjM3U/KoMtS95OrfYKWXbeenW9R82nZISrI3D0cBIYICigZC3DrQVl9M5mYA+g==
+"@apollo/server@4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@apollo/server/-/server-4.5.0.tgz#e53aac06e6d7ea10aea7fb4a66f52dc6aa9794b8"
+  integrity sha512-+7iRp0omJATUrVQ6b4JKi4XUvvuL+hBxu5/Hy6WiZmVNcVm19zzO+xTOlXO8OJBZgd14jZnGRgWx/eZjXEmkXQ==
   dependencies:
     "@apollo/cache-control-types" "^1.0.2"
     "@apollo/server-gateway-interface" "^1.1.0"
@@ -898,10 +898,10 @@
   resolved "https://registry.yarnpkg.com/@lukeed/csprng/-/csprng-1.1.0.tgz#1e3e4bd05c1cc7a0b2ddbd8a03f39f6e4b5e6cfe"
   integrity sha512-Z7C/xXCiGWsg0KuKsHTKJxbWhpI3Vs5GwLfOean7MGyVFGqdRgBbAjOCh6u4bbjPc/8MJ2pZmK/0DLdCbivLDA==
 
-"@nestjs/apollo@^11.0.4":
-  version "11.0.5"
-  resolved "https://registry.yarnpkg.com/@nestjs/apollo/-/apollo-11.0.5.tgz#9739bafadc3a48a8372c60c8128a720bf830eedc"
-  integrity sha512-6+V+fw2tBT4MskOV012k2UoEL0D2nteDbpOTlb42tur0yCQseBx1E+HdqpLAeRr25F6H6LipgEOum9y9NF4DGQ==
+"@nestjs/apollo@11.0.4":
+  version "11.0.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/apollo/-/apollo-11.0.4.tgz#0c544ee5c237f6b36c91775927cf053ff644e2e6"
+  integrity sha512-K2jjUI0aMGhSD3kW7j8Qy42NdxlZ32bOeUL057xWf7i4WDm8KaxqUelxB2+RK6HqL48H/qDQ5Sk6aH9UGYtmZQ==
   dependencies:
     "@apollo/server-plugin-landing-page-graphql-playground" "4.0.0"
     iterall "1.3.0"
@@ -957,10 +957,10 @@
     path-to-regexp "3.2.0"
     tslib "2.5.0"
 
-"@nestjs/graphql@^11.0.4":
-  version "11.0.5"
-  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-11.0.5.tgz#6b66a57319ce5772f5991a6147c9520f254fc51a"
-  integrity sha512-yWDxorb3efDpY55i8exSlJTRRdIISoaQAWm1LukvVJAn4FiRAMUOUlAgNOSU+oX4TMjMp6LffA2cG66WpIssPg==
+"@nestjs/graphql@11.0.4":
+  version "11.0.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-11.0.4.tgz#a0e85c76c4c5c2812f2f88b143452f5c5bbbfb13"
+  integrity sha512-D4KqFOfow18R9KrxgQBPntsKGsbZi5XQQnjwngbHXKrarRWv79yjUyHdMwZ7qnoryVx/REbFmdglF6ZpdnjiNg==
   dependencies:
     "@graphql-tools/merge" "8.4.0"
     "@graphql-tools/schema" "9.0.17"
@@ -969,7 +969,7 @@
     chokidar "3.5.3"
     fast-glob "3.2.12"
     graphql-tag "2.12.6"
-    graphql-ws "5.12.1"
+    graphql-ws "5.12.0"
     lodash "4.17.21"
     normalize-path "3.0.0"
     subscriptions-transport-ws "0.11.0"
@@ -2907,10 +2907,10 @@ graphql-tag@2.12.6:
   dependencies:
     tslib "^2.1.0"
 
-graphql-ws@5.12.1:
-  version "5.12.1"
-  resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.12.1.tgz#c62d5ac54dbd409cc6520b0b39de374b3d59d0dd"
-  integrity sha512-umt4f5NnMK46ChM2coO36PTFhHouBrK9stWWBczERguwYrGnPNxJ9dimU6IyOBfOkC6Izhkg4H8+F51W/8CYDg==
+graphql-ws@5.12.0:
+  version "5.12.0"
+  resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.12.0.tgz#d06fe38916334b4a4c827f73268cbf4359a32ed7"
+  integrity sha512-PA3ImUp8utrpEjoxBMhvxsjkStvFEdU0E1gEBREt8HZIWkxOUymwJBhFnBL7t/iHhUq1GVPeZevPinkZFENxTw==
 
 graphql@^16.6.0:
   version "16.6.0"
