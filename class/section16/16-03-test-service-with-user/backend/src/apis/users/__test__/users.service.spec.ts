@@ -87,5 +87,21 @@ describe('UsersService', () => {
         age: 13,
       });
     });
+
+    // TDD => 테스트를 먼저 만들자!
+    it('이메일 길이가 초과됐을때 검증!!!', async () => {
+      const myData = {
+        email: 'askldjfaklsdjfklasdfjklqwjefklwjef@bbb.com', // DB에 없는 이메일
+        password: '1234',
+        name: '철수',
+        age: 13,
+      };
+
+      try {
+        await usersService.create({ ...myData });
+      } catch (error) {
+        expect(error).toBeInstanceOf(UnprocessableEntityException);
+      }
+    });
   });
 });
